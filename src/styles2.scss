@@ -870,23 +870,27 @@ footer {
             margin: 5px;
             color: white !important;
             border-radius: 10px;
-            font-size: 15px;
+            font-size: 20px;
             padding-top: 14px;
             cursor: pointer;
             transition: font-size 0.3s;
         }
 
         a:hover {
-            font-size: 18px;
+            font-size: 26px;
             transition: font-size 0.6s;
         }
 
         a.blue {
-            background-color: #004A76;
+           // background-color: #004A76;
+            background-color: #069;
         }
-
+        a.green-old{
+          background-color: #669900;
+        }
         a.yellow {
-            background-color: #956296;
+            // background-color: #956296;
+            background-color: #fcb813;
         }
 
         a.red {
@@ -894,7 +898,7 @@ footer {
         }
 
         a.green {
-            background-color: #0D9136  
+            background-color: #0D9136
         }
 
     } /** end / nav */
