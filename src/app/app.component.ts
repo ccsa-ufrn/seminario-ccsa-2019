@@ -14,7 +14,7 @@ declare var jQuery: any;
 })
 export class AppComponent implements OnInit {
 
-
+    routeActive = true;
     /** modals */
     private modalMinicurso: boolean;
     private modalOficina: boolean;
@@ -351,11 +351,11 @@ export class AppComponent implements OnInit {
     private _togglePrazoModal() {
         this.modalPrazo = !this.modalPrazo;
     }
-    
+
     private _toggleColoquioModal() {
         this.modalColoquio = !this.modalColoquio;
     }
-    
+
     private _toggleInfoScienceModal() {
         this.modalInfoScience = !this.modalInfoScience;
     }
