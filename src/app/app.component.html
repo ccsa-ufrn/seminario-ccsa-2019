@@ -126,8 +126,8 @@
     <div class="row">
       <div class="col-md-12">
         <nav class="main">
-          <a class="green-old" (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">Programação</a>
-          <a class="yellow" (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">Subeventos</a>
+          <a class="green-old" (click)="_toggleEmBreveModal()" (keypress.enter)="_toggleEmBreveModal()">Programação</a>
+          <a class="yellow" (click)="_toggleEmBreveModal()" (keypress.enter)="_toggleEmBreveModal()">Subeventos</a>
           <a class="blue" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
           <a class="green-old" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
         </nav>
@@ -281,8 +281,7 @@
               </picture>
               Créditos para Ciências Econômicas
             </a>
-            <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()" target="_blank">
-            <!-- <a href="assets/ng2/download2019/UFRN ATC Ciências Contábeis (1).pdf" target="_blank"> -->
+            <a href="assets/ng2/download2019/UFRN ATC Direito.pdf" target="_blank">
               <picture>
                 <!-- greater size to lower size -->
                 <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
@@ -301,7 +300,7 @@
               </picture>
               Créditos para Turismo
             </a>
-            <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()" target="_blank">
+            <a href="assets/ng2/download2019/UFRN ATC Biblioteconomia.pdf" target="_blank">
               <picture>
                 <!-- greater size to lower size -->
                 <source srcset="assets/ng2/download_02.png" media="(min-width: 768px)">
@@ -903,6 +902,17 @@
   <div class="container-all">
     <div class="header">
       <a (click)="_togglePrazoModal()" (keypress.enter)="_togglePrazoModal()">FECHAR</a>
+    </div>
+    <div class="container-modal">
+      <p>Inscrições prorrogadas para 28 de Abril</p>
+    </div>
+  </div>
+</div>
+
+<div class="modal-news" [ngClass]="{'open': modalEmBreve}">
+  <div class="container-all">
+    <div class="header">
+      <a (click)="_toggleEmBreveModal()" (keypress.enter)="_toggleEmBreveModal()">FECHAR</a>
     </div>
     <div class="container-modal">
       <p>Em breve...</p>
