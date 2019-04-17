@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
     private modalInternational: boolean;
     private modalTalkingCircle: boolean;
     private modalExtension: boolean;
-    private modalWelfare: boolean;
+    private modalPublicPolicy: boolean;
     private modalBeing: boolean;
 
     public umaNoticia: News;
@@ -82,7 +82,7 @@ export class AppComponent implements OnInit {
         this.modalInternational = false;
         this.modalTalkingCircle = false;
         this.modalExtension = false;
-        this.modalWelfare = false;
+        this.modalPublicPolicy = false;
         this.modalBeing = false;
         this.modalPrazo = true;
         this.modalEmBreve = false;
@@ -386,8 +386,8 @@ export class AppComponent implements OnInit {
         this.modalExtension = !this.modalExtension;
     }
 
-    private _toggleWelfareModal() {
-        this.modalWelfare = !this.modalWelfare;
+    private _togglePublicPolicyModal() {
+        this.modalPublicPolicy = !this.modalPublicPolicy;
     }
 
     private _toggleBeingModal() {

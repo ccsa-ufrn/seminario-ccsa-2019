@@ -127,7 +127,7 @@
       <div class="col-md-12">
         <nav class="main">
           <a class="green-old" (click)="_toggleEmBreveModal()" (keypress.enter)="_toggleEmBreveModal()">Programação</a>
-          <a class="yellow" (click)="_toggleEmBreveModal()" (keypress.enter)="_toggleEmBreveModal()">Subeventos</a>
+          <a class="yellow" (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">Subeventos</a>
           <a class="blue" (click)="_gotTo('#s-inscription')" (keypress.enter)="_gotTo('#s-inscription')">Inscreva-se</a>
           <a class="green-old" href="http://sigeva.ccsa.ufrn.br/login">Acessar</a>
         </nav>
@@ -924,39 +924,45 @@
   </div>
 </div>
 
-<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalWelfare}">
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalPublicPolicy}">
   <div class="container-all">
     <div class="header">
-      XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia
-      <a (click)="_toggleWelfareModal()" (keypress.enter)="_toggleWelfareModal()">FECHAR</a>
+      Participação e controle social na gestão pública: balanço e perspectivas na contemporaneidade
+      <a (click)="_togglePublicPolicyModal()" (keypress.enter)="_togglePublicPolicyModal()">FECHAR</a>
     </div>
     <div class="container-modal">
       <div>
-        <p>O Seminário de Seguridade Social e Trabalho, promovido pelo GESTO (Grupo de Estudos Seguridade Social e Trabalho)
-          tem por objetivo central proporcionar a divulgação e a atualização de conhecimentos sobre temáticas relacionadas
-          aos direitos trabalhistas e previdenciários, com foco especial, na questão das recentes reformas dos direitos sociais.
-          O evento é uma realização da Base de Pesquisa DIREITOS SOCIAIS E CONTEMPRANEIDADE e conta com o apoio do Departamento
-          de Direito Privado da UFRN.</p>
-        <h3>18/05</h3>
+        <h3>29/05</h3>
         <ul>
-          <li><strong>Local: </strong>Auditório do NEPSA 1 (PRÓXIMO AO BLOCO DO GOIABÃO)</li>
-          <li><strong>09h:00 as 12:00 - </strong>Preparação</li>
-          <li><strong>14:00 - </strong>Credenciamento</li>
-          <li><strong>14:15 - </strong>Apresentação artística</li>
-          <li><strong>14:40 - </strong>Conferência de abertura
+          <li><strong>15:30 - </strong>Mesa Redonda - Gestão Pública e Controle Social na Prática</li>
+          <li><strong>Conferência 01 - </strong>
             <ol>
-              <li>Juiza Laura Brenda- presidente da AJD - Associaçao de Juristas para a Democracia</li>
-              <li><strong>Presidente da mesa: </strong>Maria Arlete Duarte Araújo</li>
+              <li>Ivani Matias Xavier Trigueiro (Conselho Estadual de Assistência Social)</li>
             </ol>
           </li>
-          <li>Criação oficial do Núcleo Juridico da AJD no RN</li>
-          <li><strong>Painel: </strong>Trabalho Decente e Gênero
+          <li><strong>Conferência 02 - </strong>
             <ol>
-              <li><strong>Painelista 1: </strong> Ana Laura Araújo (integrante AJPDC - Associação dos Juristas Potiguares pela
-                Democracia e Cidadania).</li>
-              <li><strong>Painelista 2: </strong>Paula Lays (Pesquisadora do GESTO e acadêmica de direito) </li>
+              <li>Cipriano Maia (Secretário de Saúde Pública)</li>
             </ol>
           </li>
+        <li><strong>19:30 - </strong>Cerimônia de abertura</li>
+        <li><strong>20:00 - </strong>Conferência: Núcleo de Ações de Ouvidoria e prevenção da Corrupção da CGU</li>
+        <h3>30/05</h3>
+        </ul>
+        <ul>
+          <li><strong>09:30 - </strong>Mesa Redonda - A atuação do Tribunal de Contas na Transparência Pública</li>
+          <li><strong>Conferência 01 - </strong>
+            <ol>
+              <li>Ana Paula de Oliveira Gomes - Conselheira Substituta do TCE-RN</li>
+            </ol>
+          </li>
+          <li><strong>Conferência 02 - </strong>
+            <ol>
+              <li>Luciana Ribeiro Campos - Procuradora do TCE-RN</li>
+            </ol>
+          </li>
+        <li><strong>15:30 - </strong>Conferência de Encerramento: A política de Dados Abertos e os seus desafios de implementação 
+        - Prof. Dr. Elias Jacob Menezes Neto(CERES)</li>
         </ul>
       </div>
     </div>
@@ -1392,30 +1398,8 @@
       <a (click)="_toggleColoquioModal()" (keypress.enter)="_toggleColoquioModal()">FECHAR</a>
     </div>
     <div class="container-modal">
-      <a (click)="_toggleInfoScienceModal()" (keypress.enter)="_toggleInfoScienceModal()">
-        <h2 style="color: #4F81BD">Coloquio de Ciência da Informação - Tema: Protagonismo Social da Informação - Mais informações</h2>
-      </a>
-      <a (click)="_togglePublicManagementModal()" (keypress.enter)="_togglePublicManagementModal()">
-        <h2 style="color: #4F81BD">IV COLÓQUIO SOBRE GESTÃO PÚBLICA - Mais informações</h2>
-      </a>
-      <a (click)="_toggleFeminismModal()" (keypress.enter)="_toggleFeminismModal()">
-        <h2 style="color: #4F81BD">I COLÓQUIO FEMINISMO MATERIALISTA E MARXISMO - Mais informações</h2>
-      </a>
-      <a (click)="_toggleInternationalModal()" (keypress.enter)="_toggleInternationalModal()">
-        <h2 style="color: #4F81BD">Colóquio Internacional - Agricultura camponesa, segurança alimentar e nutricional e resistências: interlocuções Brasil,
-          Argentina, Colômbia - Mais informações</h2>
-      </a>
-      <a (click)="_toggleTalkingCircleModal()" (keypress.enter)="_toggleTalkingCircleModal()">
-        <h2 style="color: #4F81BD">EVENTO RODA DE CONVERSA - ANO V - Mais informações</h2>
-      </a>
-      <a (click)="_toggleExtensionModal()" (keypress.enter)="_toggleExtensionModal()">
-        <h2 style="color: #4F81BD"> VII Mostra de Extensão - Mais informações</h2>
-      </a>
-      <a (click)="_toggleWelfareModal()" (keypress.enter)="_toggleWelfareModal()">
-        <h2 style="color: #4F81BD">XVI Seminário de Seguridade Social e Trabalho: Trabalho Decente e Democracia - Mais informações</h2>
-      </a>
-      <a (click)="_toggleBeingModal()" (keypress.enter)="_toggleBeingModal()">
-        <h2 style="color: #4F81BD">EXPOSIÇÃO 'A ESSÊNCIA DO SER</h2>
+      <a (click)="_togglePublicPolicyModal()" (keypress.enter)="_togglePublicPolicyModal()">
+        <h2 style="color: #4F81BD">Participação e controle social na gestão pública: balanço e perspectivas na contemporaneidade</h2>
       </a>
     </div>
   </div>
