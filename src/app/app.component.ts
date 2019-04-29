@@ -29,8 +29,8 @@ export class AppComponent implements OnInit {
     private modalPublicManagement: boolean;
     private modalFeminism: boolean;
     private modalInternational: boolean;
-    private modalTalkingCircle: boolean;
-    private modalExtension: boolean;
+    private modal03: boolean;
+    private modal02: boolean;
     private modalPublicPolicy: boolean;
     private modalBeing: boolean;
 
@@ -80,8 +80,8 @@ export class AppComponent implements OnInit {
         this.modalPublicManagement = false;
         this.modalFeminism = false;
         this.modalInternational = false;
-        this.modalTalkingCircle = false;
-        this.modalExtension = false;
+        this.modal03 = false;
+        this.modal02 = false;
         this.modalPublicPolicy = false;
         this.modalBeing = false;
         this.modalPrazo = true;
@@ -378,12 +378,12 @@ export class AppComponent implements OnInit {
         this.modalInternational = !this.modalInternational;
     }
 
-    private _toggleTalkingCircleModal() {
-        this.modalTalkingCircle = !this.modalTalkingCircle;
+    private _toggle03Modal() {
+        this.modal03 = !this.modal03;
     }
 
-    private _toggleExtensionModal() {
-        this.modalExtension = !this.modalExtension;
+    private _toggle02Modal() {
+        this.modal02 = !this.modal02;
     }
 
     private _togglePublicPolicyModal() {
