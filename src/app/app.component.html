@@ -1226,28 +1226,35 @@
   </div>
 </div>
 
-<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modalBeing}">
+<div class="modal-news" style="z-index: 1000" [ngClass]="{'open': modal05}">
   <div class="container-all">
     <div class="header">
-      EXPOSIÇÃO 'A ESSÊNCIA DO SER
-      <a (click)="_toggleBeingModal()" (keypress.enter)="_toggleBeingModal()">FECHAR</a>
+     RODA DE CONVERSA 
+    <a (click)="_toggle05Modal()" (keypress.enter)="_toggle05Modal()">FECHAR</a>
     </div>
     <div class="container-modal">
-      <a href="assets/ng2/download/EssenciaDoSer.pdf">
-        <h4>Folder do evento</h4>
-      </a>
       <ul>
-        <h3>Abertura 17/05/2018 às 9:30h - Hall de exposições do Nepsa</h3>
-        <p>A mostra é uma iniciativa do DEPAD e das professora Aline Nelson, Lilia Asuca, Pamela Brandão Teresa Pires e Arlete
-          Araújo com curadoria do fotógrafo e aluno da UFRN Vlademir Alexandre e compõe um conjunto de fotografia autorais
-          entre frases e trechos poéticos colecionados como relíquias pela professora Dalvanir Avelino
-        </p>
-        <p>
-          A exposição fotográfica A ESSÊNCIA DO SER capta a beleza, fazendo com que nos despertem os sentidos e as emoções mais profundas
-          em termos de reflexão sobre como deixamos o essencial da vida passar, por vezes, despercebidos em meio às atribuições
-          do cotidiano. Neste sentido é notável o olhar para a diversidade da fotógrafa Dalvanir Avelino, cujo respeito ao
-          outra e a solidariedade humana, próprias da sua essência, transparecem em seus registros.
-        </p>
+        <h3>Título: <strong>Marxismo, política social e direitos.</strong></h3>
+        <ol>
+          <li>Orgs: Ivanete Boschetti, Elaine Behring e Rita de Lourdes de Lima</li>
+          <li>São Paulo: Cortez, 2018.</li>
+          <li>Autores de capítulos
+            <ol>
+              <li>Andréa Lima da Silva e Silvana Mara de Morais dos Santos</li>
+              <li>Daniela Neves de Sousa</li>
+              <li>Henrique André Ramos Wellen</li>
+              <li>Miriam de Oliveira Inácio</li>
+              <li>Rita de Lourdes de Lima</li>
+              <li>Tássia Rejane Monte dos Santos</li>
+            </ol>
+          </li>
+        </ol>
+        <h3>Título: <strong>Interace entre Turismo e Desenvolvimento</strong></h3>
+        <ol>
+          <li>Turismo e Sustentabilidade: verso e reverso – Professor Dr. João Tasso – UNB</li>
+          <li>Territorialidades do Turismo: dinâmicas e desafios do Mercado Turístico – Professora Andrea Dantas – UFRN</li>
+          <li>The Routledge Companion to Rural Planning - Professor Mozart Fazito – UFRN</li>
+        </ol>
       </ul>
       <br/>
     </div>
@@ -1341,6 +1348,9 @@
       </a>
       <a (click)="_toggle04Modal()" (keypress.enter)="_toggle04Modal()">
         <h2 style="color: #4F81BD">II COLÓQUIO FEMINISMO MATERIALISTA E MARXISMO</h2>
+      </a>
+      <a (click)="_toggle05Modal()" (keypress.enter)="_toggle05Modal()">
+        <h2 style="color: #4F81BD">Roda de Conversa</h2>
       </a>
     </div>
   </div>

@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     private modal03: boolean;
     private modal02: boolean;
     private modalPublicPolicy: boolean;
-    private modalBeing: boolean;
+    private modal05: boolean;
 
     public umaNoticia: News;
 
@@ -83,8 +83,8 @@ export class AppComponent implements OnInit {
         this.modal03 = false;
         this.modal02 = false;
         this.modalPublicPolicy = false;
-        this.modalBeing = false;
-        this.modalPrazo = true;
+        this.modal05 = false;
+        this.modalPrazo = false;
         this.modalEmBreve = false;
 
         /** REGISTER FORM */
@@ -390,8 +390,8 @@ export class AppComponent implements OnInit {
         this.modalPublicPolicy = !this.modalPublicPolicy;
     }
 
-    private _toggleBeingModal() {
-        this.modalBeing = !this.modalBeing;
+    private _toggle05Modal() {
+        this.modal05 = !this.modal05;
     }
 
     private _toggleUmaNoticiaModal(id?: number) {
