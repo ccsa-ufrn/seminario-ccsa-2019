@@ -84,7 +84,7 @@ export class AppComponent implements OnInit {
         this.modal02 = false;
         this.modalPublicPolicy = false;
         this.modal05 = false;
-        this.modalPrazo = false;
+        this.modalPrazo = true;
         this.modalEmBreve = false;
 
         /** REGISTER FORM */
