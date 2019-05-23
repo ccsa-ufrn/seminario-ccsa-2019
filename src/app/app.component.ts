@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
     private modalPrazo: boolean;
     private modalEmBreve: boolean;
     private modalColoquio: boolean;
-    private modalInfoScience: boolean;
+    private modal06: boolean;
     private modalPublicManagement: boolean;
     private modal04: boolean;
     private modalInternational: boolean;
@@ -76,7 +76,7 @@ export class AppComponent implements OnInit {
         this.modalProgramacao = false;
         this.modalUmaNoticiaModal = false;
         this.modalColoquio = false;
-        this.modalInfoScience = false;
+        this.modal06 = false;
         this.modalPublicManagement = false;
         this.modal04 = false;
         this.modalInternational = false;
@@ -362,8 +362,8 @@ export class AppComponent implements OnInit {
         this.modalColoquio = !this.modalColoquio;
     }
     
-    private _toggleInfoScienceModal() {
-        this.modalInfoScience = !this.modalInfoScience;
+    private _toggle06Modal() {
+        this.modal06 = !this.modal06;
     }
 
     private _togglePublicManagementModal() {
