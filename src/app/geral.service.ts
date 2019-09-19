@@ -21,6 +21,13 @@ export interface News {
   created_at: string;
 }
 
+export interface Submission {
+  title: string;
+  abstract: string;
+  tg:string;
+  file?:any;
+}
+
 @Injectable()
 export class GeralService {
 
@@ -84,6 +91,15 @@ export class GeralService {
     body.set('email', email);
     return this._http.post(`${this.host}/api/forgot_pass`, body)
       .map((res: any) => { return res.json() });
+  }
+
+  public getGts2(): Observable<Array<ThematicGroup>> {
+    return this._http.get('https://sigeva.ccsa.ufrn.br/api/event/5c0e57439e8a9b62858ede58/gts/all')
+      .map((res: any) => { return res.json().data });
+  }
+  public getSubmissions(): Observable<Array<Submission>>{
+    return this._http.get('https://sigeva.ccsa.ufrn.br/api/event/5c0e57439e8a9b62858ede58/submissions/all')
+      .map((res: any) => { return res.json();});
   }
 
 
